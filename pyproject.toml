@@ -1,0 +1,28 @@
+[project]
+name = "langchain-v1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhishek Rana", email = "abhi.rana.5626@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4.2",
+    "langchain-community>=0.4.2",
+    "langchain-deepseek>=1.1.1",
+    "langchain-google-genai>=4.4.0",
+    "langchain-groq>=1.1.3",
+    "langchain-nvidia-ai-endpoints>=1.4.3",
+    "langchain-openai>=1.6.6",
+    "langchain-openrouter>=0.2.9",
+    "openai>=3.19.2",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+langchain-v1 = "langchain_v1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
